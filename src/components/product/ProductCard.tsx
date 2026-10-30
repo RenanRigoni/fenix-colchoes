@@ -23,7 +23,7 @@ export function ProductCard({ produto, isPrioritario = false }: Props) {
           loading={isPrioritario ? "eager" : "lazy"}
           className="size-full object-contain p-4 mix-blend-multiply transition duration-700 ease-(--ease-saida) group-hover:scale-105"
         />
-        <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold tracking-wide text-suave shadow-sm backdrop-blur">
+        <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold tracking-wide text-suave shadow-sm backdrop-blur">
           {produto.codigo}
         </span>
       </div>

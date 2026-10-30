@@ -76,16 +76,16 @@ export default async function ProdutoPage({ params }: Props) {
 
       <div className="border-b border-linha bg-fundo">
         <Container>
-          <nav aria-label="Você está em" className="flex flex-wrap items-center gap-x-1.5 py-2 text-sm text-suave">
-            <Link href="/" className="py-2 hover:text-azul-600">
+          <nav aria-label="Você está em" className="flex flex-wrap items-center gap-x-1.5 py-1 text-sm text-suave">
+            <Link href="/" className="inline-block py-3 hover:text-azul-600">
               Início
             </Link>
             <ChevronRight className="size-3.5" />
-            <Link href="/produtos/" className="py-2 hover:text-azul-600">
+            <Link href="/produtos/" className="inline-block py-3 hover:text-azul-600">
               Produtos
             </Link>
             <ChevronRight className="size-3.5" />
-            <Link href={`/produtos/?categoria=${produto.categoria}`} className="py-2 hover:text-azul-600">
+            <Link href={`/produtos/?categoria=${produto.categoria}`} className="inline-block py-3 hover:text-azul-600">
               {nomeCategoria(produto.categoria)}
             </Link>
             <ChevronRight className="size-3.5" />
@@ -101,7 +101,7 @@ export default async function ProdutoPage({ params }: Props) {
 
         <div>
           <div className="flex flex-wrap items-center gap-3">
-            <Link href={`/produtos/?marca=${produto.marca}`} className="text-sm font-extrabold tracking-[0.2em] text-azul-600 uppercase hover:underline">
+            <Link href={`/produtos/?marca=${produto.marca}`} className="-my-3 inline-block py-3 text-sm font-extrabold tracking-[0.2em] text-azul-600 uppercase hover:underline">
               {nomeMarca(produto.marca)}
             </Link>
             <span className="rounded-full bg-fundo px-3 py-1 text-xs font-semibold text-suave">Cód. {produto.codigo}</span>

@@ -12,7 +12,7 @@ export function CategoryStrip() {
             <h2 id="titulo-categorias" className="text-lg font-extrabold tracking-tight text-tinta sm:text-xl">
               O que você procura?
             </h2>
-            <Link href="/produtos/" className="shrink-0 text-sm font-bold text-azul-600 underline-offset-4 hover:underline">
+            <Link href="/produtos/" className="-my-3 shrink-0 py-3 text-sm font-bold text-azul-600 underline-offset-4 hover:underline">
               Ver tudo
             </Link>
           </div>

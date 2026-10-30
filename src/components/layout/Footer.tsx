@@ -28,10 +28,10 @@ export function Footer() {
 
         <nav aria-label="Rodapé">
           <h2 className="text-xs font-bold tracking-[0.2em] text-azul-300 uppercase">Navegação</h2>
-          <ul className="mt-4 space-y-0.5 text-sm">
+          <ul className="mt-3 text-sm">
             {NAV.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="inline-block py-2 text-white/80 transition hover:text-white">
+                <Link href={item.href} className="inline-block py-3 text-white/80 transition hover:text-white">
                   {item.label}
                 </Link>
               </li>
