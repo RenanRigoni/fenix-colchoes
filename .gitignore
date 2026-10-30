@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# testes
+.vitest/
+.playwright-mcp/
+
+# arquivos de trabalho (mockup e logo original)
+/layout.png
+/logo.png
