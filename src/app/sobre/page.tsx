@@ -74,7 +74,7 @@ export default function SobrePage() {
                 <li key={m.id}>
                   {m.logo ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={asset(m.logo)} alt={m.nome} loading="lazy" height={40} width={120} className="h-10 w-auto opacity-70 brightness-0 transition hover:opacity-100" />
+                    <img src={asset(m.logo)} alt={m.nome} loading="lazy" height={40} width={120} className="h-8 max-w-28 w-auto object-contain opacity-70 sm:h-10 sm:max-w-36 brightness-0 transition hover:opacity-100" />
                   ) : (
                     <span className="text-3xl font-black text-black/70">{m.nome}</span>
                   )}

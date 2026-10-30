@@ -119,7 +119,7 @@ export function Catalog() {
       ) : (
         <>
         <h2 className="sr-only">Lista de produtos</h2>
-        <ul className="mt-4 grid grid-cols-1 gap-5 min-[480px]:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <ul className="mt-4 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
           {lista.map((p, i) => (
             <li key={p.id} className="flex">
               <ProductCard produto={p} isPrioritario={i < 4} />
