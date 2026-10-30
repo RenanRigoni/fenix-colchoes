@@ -30,7 +30,7 @@ export function CategoryTile({ nome, imagem, quantidade, variante = "grande" }: 
             width={isGrande ? 240 : 96}
             height={isGrande ? 192 : 64}
             loading={isGrande ? "eager" : "lazy"}
-            className={`h-full w-full object-contain mix-blend-multiply transition-transform duration-700 ease-(--ease-saida) group-hover:scale-110 ${
+            className={`absolute inset-0 size-full object-contain mix-blend-multiply transition-transform duration-700 ease-(--ease-saida) group-hover:scale-110 ${
               isGrande ? "p-3" : "p-1.5"
             }`}
           />
